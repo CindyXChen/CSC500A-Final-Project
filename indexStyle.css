@@ -1,12 +1,17 @@
 body {
   height: 2000px;
-  background: #efe4cc;
-  background: linear-gradient(#efe4cc, #fab1a0);
+  background: white;
+  background: linear-gradient(white, #FCDFD9);
   max-width: none;
   font-family: 'Perpetua', 'Times New Roman', serif;
   line-height: 1.6;
   font-size: 20px;
   text-decoration-color: hotpink;
+}
+
+header {
+  margin-left: 120px;
+  margin-top: 10px;
 }
 
 a:link {
@@ -19,19 +24,56 @@ a:visited {
 }
 
 a:hover {
-    color: hotpink;
+    color:  #fab1a0;
 }
 
 #searchButton{
   text-align: right;
+  margin-right: 62px;
+  margin-top: -32px;
+}
+
+.header {
+  margin-top: -20px;
+  font-family: 'Perpetua', sans-serif;
+  padding: 0px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-family: 'Snell Roundhand', 'Apple Chancery';
+  text-align: left;
+  margin-left: 120px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+
+.header h2 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: -80px;
+  line-height: normal;
+  text-align: right;
+  margin-right: 120px;
+}
+
+.header h3 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: -50px;
+  line-height: normal;
+  text-align: right;
+  margin-right: 120px;
 }
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 500px;
-  height: 300px;
+  width: 60%;
+  height: 250px;
   max-width: 100%;
   max-height: 100%;
   display: block;
@@ -47,6 +89,9 @@ a:hover {
 
 img {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   vertical-align: middle;
   max-height: 100%;
   max-width: 100%;
@@ -58,9 +103,9 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 120%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 16px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -69,7 +114,11 @@ img {
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -78,6 +127,7 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: white;
 }
 
 /* Caption text */
@@ -138,4 +188,56 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+h4 {
+  text-align: center;
+  margin-top: -10px;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+  width: auto;
+}
+
+#abstract {
+  margin-top: 400px;
+}
+
+#abstract p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.container-fluid {
+  width: 100%;
+  text-align: center;
+  padding-top: -100px;
+}
+
+#members p {
+  padding-top: 30px;
+  padding-bottom: -5px;
+}
+
+#text_members {
+  background-color: #d8d8d8;
+}
+
+.column-left {
+  float: left;
+  width: 33.3%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.column-center {
+  display: inline-block;
+  width: 33.3%;
+  margin-top: -50px;
+}
+
+.column-right {
+  float: right;
+  width: 33.3%;
+  margin-right: -50px;
+  margin-top: -50px;
 }

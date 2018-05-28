@@ -6,6 +6,7 @@
     <meta name="description" content="Cindy Chen, Sasha Nikolaeva, and Sarah Zhao's French Culinary History Independent Project"/>
     <meta name="keywords" content="students, french culture, cuisine, pastry, history"/>
     <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = yes">
+
     <link rel="stylesheet" type="text/css" href="indexStyle.css"/>
   </head>
 
@@ -13,14 +14,23 @@
     <header id="masthead" role="banner">
       <a href="index.html">Home</a> /
       <a href="aboutUs.html">About Us</a> /
-      <a href="blogs.html">Recipes</a>
+      <a href="blogs.html">Blog Posts</a>
     </header>
+
 
     <form id="searchButton" role="search" method="get" action="https://cindyxchen.github.io/CSC500A-Final-Project/" class="siq_searchForm">
       <label class="sfrm-caption" for="s">Find an Entry or a Recipe:</label>
       <input  id="searchInput" type="text"  results="5" autosave="blog_search" name="s" maxlength="255" placeholder="Keywords" value autocomplete="off">
       <button onclick="performSearch()">Search</button>
     </form>
+    <br>
+
+    <div class="header" style="text-align:center">
+      <h1>À Table!</h1>
+      <h2>A French Culinary History Independent Project</h2>
+      <br>
+      <h3><em>By Cindy Chen PA'18, Sasha Nikolaeva PA'18 & Sarah Zhao PA'18</em></h3>
+    </div>
 
     <div id="slideshow">
 <!-- use max height and max width to fit pictures in centered position -->
@@ -123,12 +133,40 @@
       </div>
     </div>
 
+    <br>
+
+    <div id="abstract" style="text-align:left">
+      <h4>Project Abstract</h4>
+      <p style="text-indent: 2em">The land of Michelin stars and Cordon Bleu culinary school, France has arguably been the center of continental European culinary culture since the age of Roman Emperors and remains so today. For this independent project, we propose to take a closer look at the historical and cultural contexts of French food on the table, surveying the roots of the prominent French food culture in four progressing time periods: the Middle Ages, the Ancien Régime, the 18th and 19th century surrounding the French Revolution and pan-European industrialization, and lastly the 20th century until contemporary.</p>
+      <p style="text-indent: 2em">We will spend one week to introduce the topic, two weeks on each major time period, and the last week to summarize and reflect on what we learned. Throughout the term, we will be reading extensively from French primary sources ranging from Le Viandier of the early 14th century to the contemporary Guide Michelin, as well as supplementary secondary and reference sources in English about the historical and cultural context of these primary sources. Students will be meeting weekly with the OWHL/history faculty advisors to discuss primary sources and explore historical connections. Students will write weekly food blogs that explore the cultural and historical implications of particular ingredients, recipes and styles. At the end of the term, students will have gained a comprehensive understanding of the origins and subsequent evolution of French culinary history and culture.</p>
+    </div>
+
+    <br>
+
+    <div id="members" class="container-fluid">
+      <h4 id="text_members">Members</h4>
+      <div class="row">
+        <div class="column-left">
+          <p>Cindy Chen</p>
+          <img src="cindy_chen.jpg" style="border-radius:50%; box-shadow:0px 0px 10px white;">
+        </div>
+        <div class="column-center">
+          <p>Sasha Nikolaeva</p>
+          <img src="sasha_nikolaeva.jpg" style="border-radius:50%; box-shadow:0px 0px 10px white;">
+        </div>
+        <div class="column-right">
+          <p>Sarah Zhao</p>
+          <img src="sarah_zhao.jpg" style="border-radius:50%; box-shadow:0px 0px 10px white;">
+        </div>
+      </div>
+    </div>
+
+
     <script>
     function performSearch() {
       alert(document.getElementById("searchInput").value);
     }
-    </script>
-    <script>
+
     var slideIndex = 1;
     showSlides(slideIndex);
     // Next/previous controls
