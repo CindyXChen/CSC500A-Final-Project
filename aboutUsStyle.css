@@ -1,0 +1,130 @@
+body {
+  height: 1400px;
+  background: white;
+  background: linear-gradient(white, #FCDFD9);
+  max-width: none;
+  font-family: 'Perpetua', 'Times New Roman', serif;
+  line-height: 1.6;
+  font-size: 20px;
+  text-decoration-color: hotpink;
+}
+
+header {
+  margin-left: 120px;
+  margin-top: 10px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color:  #808080;
+}
+
+a h1:hover {
+  color: #585858;
+}
+
+#searchButton{
+  text-align: right;
+  margin-right: 62px;
+  margin-top: -32px;
+}
+
+.header {
+  margin-top: -20px;
+  font-family: 'Perpetua', sans-serif;
+  padding: 0px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-family: 'Snell Roundhand', 'Apple Chancery';
+  text-align: left;
+  margin-left: 120px;
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+
+.header h2 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: -80px;
+  line-height: normal;
+  text-align: right;
+  margin-right: 120px;
+}
+
+.header h3 {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  margin-top: -50px;
+  line-height: normal;
+  text-align: right;
+  margin-right: 120px;
+}
+
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-fluid {
+  width: 100%;
+  text-align: center;
+  padding-top: -100px;
+}
+
+#members h4 {
+  padding-top: 30px;
+  padding-bottom: -5px;
+}
+
+#text_members {
+  background-color: #d8d8d8;
+}
+
+.column-left {
+  float: left;
+  width: 33.3%;
+  margin-top: -50px;
+}
+
+.column-center {
+  display: inline-block;
+  width: 33.3%;
+  margin-top: -50px;
+}
+
+.column-right {
+  float: right;
+  width: 33.3%;
+  margin-top: -50px;
+}
+
+.container-fluid p {
+  background: #fefdfb;
+  background: linear-gradient(#fefdfb, #fdf2f0);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  line-height: 1.15;
+  text-align: left;
+  height: 915px;
+}
