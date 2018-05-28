@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog Posts - À Table! A French Culinary History Independent Project by Cindy Chen, Sasha Nikolaeva and Sarah Zhao</title>
+    <meta name="description" content="Cindy Chen, Sasha Nikolaeva, and Sarah Zhao's French Culinary History Independent Project"/>
+    <meta name="keywords" content="students, french culture, cuisine, pastry, history"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = yes">
+
+    <link rel="stylesheet" type="text/css" href="blogPostsStyle.css"/>
+  </head>
+
+  <body>
+    <header id="masthead" role="banner">
+      <a href="index.html">Home</a> /
+      <a href="aboutUs.html">About Us</a> /
+      <a href="blogPosts.html">Blog Posts</a>
+    </header>
+
+
+    <form id="searchButton" role="search" method="get" action="https://cindyxchen.github.io/CSC500A-Final-Project/" class="siq_searchForm">
+      <label class="sfrm-caption" for="s">Find an Entry or a Recipe:</label>
+      <input  id="searchInput" type="text"  results="5" autosave="blog_search" name="s" maxlength="255" placeholder="Keywords" value autocomplete="off">
+      <button onclick="performSearch()">Search</button>
+    </form>
+    <br>
+
+    <div class="header" style="text-align:center">
+      <a href="index.html"><h1>À Table!</h1></a>
+      <h2>A French Culinary History Independent Project</h2>
+      <br>
+      <h3><em>By Cindy Chen PA'18, Sasha Nikolaeva PA'18 & Sarah Zhao PA'18</em></h3>
+    </div>
+
+    <br>
+
+    <div id="members" class="container-fluid">
+      <div class="row">
+        <div class="column-left">
+
+    <script>
+    function performSearch() {
+      alert(document.getElementById("searchInput").value);
+    }
+    </script>
+
+  </body>
+</html>
