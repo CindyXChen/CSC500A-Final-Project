@@ -1,144 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" >
-    <title>CSC500 at Phillips Academy</title>
-    <meta name="description" content="A sample HTML/CSS example website to demonstrate to students what they can build"/>
-    <meta name="keywords" content="HTML/CSS, web development, webdev, example website, students" />
-    <meta name="robots" content="index,follow" />
-</head>
-<body>
-  <div id="header">
-  <h2>CSC500 at Phillips Academy</h2>
-  <p>
-    A <strong> three-term </strong> course in algorithms, object-oriented programming, and data structures, guided by the College Board's AP Computer Science course description.
-  </p>
-</div>
+  <head>
+    <meta charset="utf-8">
+    <title>À Table! A French Culinary History Independent Project by Cindy Chen, Sasha Nikolaeva and Sarah Zhao</title>
+    <meta name="description" content="Cindy Chen, Sasha Nikolaeva, and Sarah Zhao's French Culinary History Independent Project"/>
+    <meta name="keywords" content="students, french culture, cuisine, pastry, history"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = yes">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css"/>
+  </head>
 
-<style>
+  <body>
+    <header id="masthead" role="banner">
+      <a href="index.html">Home</a> /
+      <a href="aboutUs.html">About Us</a> /
+      <a href="blogs.html">Recipes</a>
+    </header>
 
-</style>
+    <form id="searchButton" role="search" method="get" action="https://cindyxchen.github.io/CSC500A-Final-Project/" class="siq_searchForm">
+      <label class="sfrm-caption" for="s">Find an Entry or a Recipe:</label>
+      <input  id="searchInput" type="text"  results="5" autosave="blog_search" name="s" maxlength="255" placeholder="Keywords" value autocomplete="off">
+      <button onclick="performSearch()">Search</button>
+    </form>
 
-<div>
-  <h4>Taken from the <a href="http://media.collegeboard.com/digitalServices/pdf/ap/ap-computer-science-a-course-description.pdf">AP CS A Course Description</a></h4>
-  <p>
-    Computer science embraces problem solving, hardware, algorithms, and perspectives that help people utilize computers to address real-world problems in contemporary life. As the study of computer science is evolving, the careful design of the AP Computer Science A course and exam continues to strive to engage a diverse student population, including female and underrepresented students, with the rigorous and rewarding concepts of computer science. Students who take the AP Computer Science A course and exam are well prepared to continue their study of computer science and its integration into a wide array of computing and STEM-related fields.
-  </p>
-  <p>
-    The AP Computer Science A curriculum provides resources, such as application-related labs, that connect with students with diverse interests, particularly female and underrepresented student populations. The course is engaging and underscores the importance of communicating solutions appropriately and in ways that are relevant to current societal needs. Thus, a well-designed, modern AP Computer Science A course can help address traditional issues of equity, access, and broadening participation in computing while providing a strong and engaging introduction to fundamental areas of the discipline.
-  </p>
-  <p>
-    The AP Computer Science A course introduces students to computer science with fundamental topics that include problem solving, design strategies and methodologies, organization of data (data structures), approaches to processing data (algorithms), analysis of potential solutions, and the ethical and social implications of computing. The course emphasizes both object-oriented and imperative problem solving and design. These techniques represent proven approaches for developing solutions that can scale up from small, simple problems to large, complex problems.
-  </p>
-  <p>
-    The AP Computer Science A course curriculum is compatible with many CS1 courses in colleges and universities. Some colleges and universities may organize their curricula in alternative ways, so that the topics of the AP Computer Science A course are spread over several college courses, with other topics from computer science interspersed.
-  </p>
-</div>
+    <div id="slideshow">
+<!-- use max height and max width to fit pictures in centered position -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 13</div>
+          <img src="1_1.jpg" style="width:100%">
+          <div class="text">Golden Toast</div>
+        </div>
 
-  <h2>Course Breakdown</h2>
-  <p>
-    There are three terms at Andover, so we have broken our yearlong course into the three terms below.
-  </p>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 13</div>
+          <img src="1_2.jpg" style="width:100%">
+          <div class="text">Golden Toast with Verjuice Lemonade</div>
+        </div>
 
-<ol>
-  <li>
-    Term 1:
-  </li>
-  <li>
-    Term 2:
-  </li>
-  <li>
-    Term 3:
-  </li>
-</ol>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 13</div>
+          <img src="1_4.jpg" style="width:100%">
+          <div class="text">Fresh Cod with Garlic Jance Sauce</div>
+        </div>
 
-  <h4> Term 1 (Fall)</h4>
-  <ol>
-    <li>
-      Hardware, Software, and the Internet
-    </li>
-    <li>
-      An Introduction to Software Engineering
-    </li>
-    <li>
-      Java Syntax and Style
-    </li>
-    <li>
-      Objects and Classes
-    </li>
-    <li>
-      Data Types, Variables, and Arithmetic
-    </li>
-    <li>
-      Boolean Expressions and <code>if-else</code> Statements
-    </li>
-    <li>
-      Algorithms and Iterations
-    </li>
-  </ol>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 13</div>
+          <img src="1_5.jpg" style="width:100%">
+          <div class="text">Norse Pie</div>
+        </div>
 
-  <h4> Term 2 (Winter)</h4>
-  <ol start="8">
-    <li>
-      Strings
-    </li>
-    <li>
-      Arrays
-    </li>
-    <li>
-      Implementing and Using Classes
-    </li>
-    <li>
-      <code>java.util.ArrayList</code>
-    </li>
-    <li>
-      Class Hierarchies and Interfaces
-    </li>
-  </ol>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 13</div>
+          <img src="2_1.jpg" style="width:100%">
+          <div class="text">Potage à la Purée de Pois</div>
+        </div>
 
-  <h4> Term 3 (Spring)</h4>
-  <ol start="13">
-    <li>
-      Algorithms and Recursion
-    </li>
-    <li>
-      Searching and Sorting
-    </li>
-  </ol>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 13</div>
+          <img src="2_2.jpg" style="width:100%">
+          <div class="text">Saumon au Bleu</div>
+        </div>
 
-  <h2>Resources</h2>
-  <p>
-    The following resources can help with students with their learning in CSC500.
-  </p>
-  <ul>
-    <li>
-      <a href="http://www.skylit.com/javamethods/">Java Methods</a>, our book for the course, as well as <a href="http://www.skylit.com/beprepared-java.html">Be Prepared for the AP Computer Science Exam in Java</a>.  Both books are by Maria and Gary Litvin.
-    </li>
-    <img src="http://www.skylit.com/9780982477564_1_2.jpg" />
-    <li>
-      <a href="http://codingbat.com/java">Coding Bat</a>: Java Challenges
-    </li>
-    <li>
-      <a href="https://projecteuler.net/archives">Project Euler</a>: Challenging algorithmic problems
-    </li>
-    <li>
-      <a href="https://stackoverflow.com/">Stack Overflow</a>: Ask and read answers from virtually any programming question
-    </li>
-    <li>
-      <a href="https://www.youtube.com/channel/UCAeRcazf0rPbh9iWXpsLxyQ">My YouTube Channel</a>: will someday have more videos on it
-    </li>
-    <li>
-       <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">The Java Development Kit (JDK)</a>: needed to compile (and run) Java programs
-    </li>
-    <li>
-      <a href="https://atom.io/">Atom</a> or <a href="https://www.eclipse.org/downloads/">Eclipse</a> to create your code
-    </li>
-  </ul>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 13</div>
+          <img src="2_3.jpg" style="width:100%">
+          <div class="text">Chicken Suprème Quenelles</div>
+        </div>
 
-  <!-- This should go in a "footer" at the bottom of the page.  By the way, this is a comment in HTML. -->
-  <p>
-    Made with ❤ at Phillips Academy.
-  </p>
-  <img src="https://enews.andover.edu/brand/images/content/andover-wordmark__2x.jpg"/>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 13</div>
+          <img src="2_4.jpg" style="width:100%">
+          <div class="text">Milan Flan</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 13</div>
+          <img src="2_5.jpg" style="width:100%">
+          <div class="text">Lemon Soufflé</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">10 / 13</div>
+          <img src="3_1.jpg" style="width:100%">
+          <div class="text">Pomegranate Poached Pear Gowned in Greens</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">11 / 13</div>
+          <img src="3_2.jpg" style="width:100%">
+          <div class="text">Ratatouille</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">12 / 13</div>
+          <img src="3_3.jpg" style="width:100%">
+          <div class="text">Rhapsodie des fruits aux couleurs</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">13 / 13</div>
+          <img src="3_4.jpg" style="width:100%">
+          <div class="text">Soufflé Cheesecake</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div id="dots" style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+          <span class="dot" onclick="currentSlide(13)"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    function performSearch() {
+      alert(document.getElementById("searchInput").value);
+    }
+    </script>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+    </script>
+
 </body>
+
+
 </html>
