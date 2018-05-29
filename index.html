@@ -152,7 +152,7 @@
         </div>
         <div class="column-center">
           <p>Sasha Nikolaeva</p>
-          <img src="CSC500A-Final-Project/Sasha_Nikolaeva.jpg" style="border-radius:50%; box-shadow:0px 0px 10px white;">
+          <img src="Sasha_Nikolaeva.jpg" style="border-radius:50%; box-shadow:0px 0px 10px white;">
         </div>
         <div class="column-right">
           <p>Sarah Zhao</p>
@@ -207,6 +207,7 @@
         slideIndex++;
         if (slideIndex > x.length) {slideIndex = 1}
         x[slideIndex-1].style.display = "block";
+        currentSlide(slideIndex);
         setTimeout(carousel, 5000); // Change image every 5 seconds
     }
     </script>
