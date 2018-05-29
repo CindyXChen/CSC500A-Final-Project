@@ -1,12 +1,11 @@
 body {
-  height: 1650px;
+  height: 1881px;
   background: white;
   background: linear-gradient(white, #FCDFD9);
   max-width: none;
   font-family: 'Perpetua', 'Times New Roman', serif;
   line-height: 1.6;
   font-size: 20px;
-  text-decoration-color: hotpink;
 }
 
 header {
@@ -232,10 +231,8 @@ h4 {
 }
 
 .column-left {
-  /* float: left; */
   display: inline-block;
   width: 25%;
-  /* margin-left: -50px; */
   margin-top: -50px;
 }
 
@@ -246,9 +243,42 @@ h4 {
 }
 
 .column-right {
-  /* float: right; */
   display: inline-block;
   width: 25%;
-  /* margin-right: -50px; */
   margin-top: -50px;
+}
+
+#acknowledgement {
+  margin-top: 20px;
+}
+
+#acknowledgement p {
+  margin-top: -10px;
+  margin-left: 150px;
+  margin-right: 150px;
+  line-height: 1.5;
+}
+
+#greeting {
+  margin-top: -20px;
+  text-align: right;
+}
+
+#signature {
+  padding-top: -40px;
+  text-align: right;
+}
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background-color: #dcdcdc;
+  background: linear-gradient(to right, #FAE1DC , #dcdcdc, 	#FAE1DC);
+  margin-bottom: 0px;
+  max-width: 100%;
+  border-radius: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 0px 0px;
 }
