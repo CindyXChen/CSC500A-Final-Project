@@ -1,5 +1,5 @@
 body {
-  height: 1535px;
+  height: 1580px;
   background: white;
   background: linear-gradient(white, #FCDFD9);
   max-width: none;
@@ -138,4 +138,18 @@ img {
 
 .column-right p {
   margin-right: 30px;
+}
+
+h5 {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  background-color: #dcdcdc;
+  background: linear-gradient(to right, #FAE1DC , #dcdcdc, 	#FAE1DC);
+  margin-bottom: 0px;
+  max-width: 100%;
+  border-radius: 0px;
+  width: 100%;
+  position: absolute;
+  padding: 0px 0px;
 }
